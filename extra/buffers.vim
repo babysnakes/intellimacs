@@ -17,3 +17,13 @@ vnoremap <leader>bk    <Esc>:action NextTab<CR>
 let g:WhichKeyDesc_Buffers_PreviousTab = "<leader>bj    previous-tab"
 nnoremap <leader>bj    :action PreviousTab<CR>
 vnoremap <leader>bj    <Esc>:action PreviousTab<CR>
+
+" Copy to Clipboard
+let g:WhichKeyDesc_Buffers_ClipboardCopy = "<leader>bc    copy-selection-to-clipboard"
+nnoremap <leader>bc    "+y
+vnoremap <leader>bc    "+y
+
+" Paste from Clipboard
+let g:WhichKeyDesc_Buffers_ClipboardPaste = "<leader>bv    paste-from-clipboard"
+nnoremap <leader>bv    "+p
+vnoremap <leader>bv    "+p

@@ -6,9 +6,9 @@ let mapleader = " "
 " Show current vim mode
 set showmode
 
-" Use the clipboard register '*' for all yank, delete, change and put operations
-" which would normally go to the unnamed register.
-set clipboard+=unnamed
+" Uncomment to use the clipboard register '*' for all yank, delete, change and
+" put operations which would normally go to the unnamed register.
+" set clipboard+=unnamed
 
 " Search as characters are entered
 set incsearch
