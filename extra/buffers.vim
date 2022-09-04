@@ -27,3 +27,16 @@ vnoremap <leader>bc    "+y
 let g:WhichKeyDesc_Buffers_ClipboardPaste = "<leader>bv    paste-from-clipboard"
 nnoremap <leader>bv    "+p
 vnoremap <leader>bv    "+p
+
+" Navigate change markers
+let g:WhichKeyDesc_Buffers_Changes = "<leader>bC +changes"
+
+" Next Change marker
+let g:WhichKeyDesc_Buffers_Changes_Next = "<leader>bCn next-change-marker"
+nnoremap <leader>bCn   :action VcsShowNextChangeMarker<CR>
+vnoremap <leader>bCn   :action VcsShowNextChangeMarker<CR>
+
+" Previous Change marker
+let g:WhichKeyDesc_Buffers_Changes_Prev = "<leader>bCp prev-change-marker"
+nnoremap <leader>bCp   :action VcsShowPrevChangeMarker<CR>
+vnoremap <leader>bCp   :action VcsShowPrevChangeMarker<CR>

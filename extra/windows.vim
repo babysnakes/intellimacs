@@ -23,6 +23,11 @@ let g:WhichKeyDesc_Windows_CloseAllOtherWindows = "<leader>wm close-all-other-wi
 nnoremap <leader>wm    :action HideAllWindows<CR>
 vnoremap <leader>wm    :action HideAllWindows<CR>
 
+" Toggle maximize of current editor split
+let g:WhichKeyDesc_Windows_ToggleEditorSplitMaximize = "<leader>wm close-all-other-windows"
+nnoremap <leader>wM    :action MaximizeEditorInSplit<CR>
+vnoremap <leader>wM    :action MaximizeEditorInSplit<CR>
+
 " Move tab to the opposite window
 let g:WhichKeyDesc_Windows_MoveTabToOppositeWindow = "<leader>wO move-tab-to-opposite-window"
 nnoremap <leader>wO    :action MoveEditorToOppositeTabGroup<CR>
