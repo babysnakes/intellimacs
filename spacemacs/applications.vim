@@ -23,3 +23,8 @@ vnoremap <leader>ap    :action ShowProcessWindow<CR>
 let g:WhichKeyDesc_Applications_Shell = "<leader>as shell"
 nnoremap <leader>as    :action Terminal.OpenInTerminal<CR>
 vnoremap <leader>as    :action Terminal.OpenInTerminal<CR>
+
+" Open sbt tool window
+let g:WhichKeyDesc_Applications_SbtToolWindow = "<leader>aq sbt tool window"
+nnoremap <leader>aq    :action ActivatesbtToolWindow<CR>
+vnoremap <leader>aq    :action ActivatesbtToolWindow<CR>
