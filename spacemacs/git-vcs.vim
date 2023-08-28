@@ -19,8 +19,8 @@ vnoremap <leader>gi    :action Git.Init<CR>
 
 " Show local changes (git status)
 let g:WhichKeyDesc_GitVcs_Status = "<leader>gs status"
-nnoremap <leader>gs    :action Vcs.Show.Local.Changes<CR>
-vnoremap <leader>gs    :action Vcs.Show.Local.Changes<CR>
+nnoremap <leader>gs    :action ActivateCommitToolWindow<CR>
+vnoremap <leader>gs    :action ActivateCommitToolWindow<CR>
 
 """ VCS Submenu ---------------------------------
 let g:WhichKeyDesc_GitVcs_VersionControl = "<leader>gv +version-control"
