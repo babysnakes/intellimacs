@@ -66,6 +66,9 @@ source ~/.intellimacs/spacemacs/toggles.vim
 let g:WhichKeyDesc_UiTogglesThemes = "<leader>T    +UI toggles/themes"
 source ~/.intellimacs/spacemacs/ui_toogles-themes.vim
 
+let g:WhichKeyDesc_View = "<leader>v    +view"
+source ~/.intellimacs/extra/view.vim
+
 let g:WhichKeyDesc_Windows = "<leader>w    +windows"
 source ~/.intellimacs/spacemacs/windows.vim
 
