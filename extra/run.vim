@@ -22,3 +22,8 @@ vnoremap <leader>Rr    :action Run<CR>
 let g:WhichKeyDesc_Run_SelectRunConfiguration = "<leader>Rs select-run-configuration"
 nnoremap <leader>Rs    :action ChooseRunConfiguration<CR>
 vnoremap <leader>Rs    :action ChooseRunConfiguration<CR>
+
+" Send to F# Interactive
+let g:WhichKeyDesc_Run_FSharpSendToFsi = "<leader>Rf fsharp-send-to-fsi"
+nnoremap <leader>Rf    :action Rider.Plugins.FSharp.SendToFsi<CR>
+vnoremap <leader>Rf    :action Rider.Plugins.FSharp.SendToFsi<CR>

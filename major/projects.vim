@@ -3,6 +3,11 @@ let g:WhichKeyDesc_Major_Project_CompileProject = "<leader>mpb compile-project"
 nnoremap <leader>mpb    :action CompileDirty<CR>
 vnoremap <leader>mpb    :action CompileDirty<CR>
 
+" Build project (solution)
+let g:WhichKeyDesc_Major_Project_BuildProject = "<leader>mps build-project"
+nnoremap <leader>mps    :action BuildWholeSolutionAction<CR>
+vnoremap <leader>mps    :action BuildWholeSolutionAction<CR>
+
 " Create project
 let g:WhichKeyDesc_Major_Project_CreateProject = "<leader>mpc create-project"
 nnoremap <leader>mpc    :action NewProject<CR>
