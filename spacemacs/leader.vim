@@ -40,3 +40,13 @@ vnoremap <leader>?    <Esc>:map<CR>
 let g:WhichKeyDesc_Leader_SearchProject = "<leader>/ search-project"
 nnoremap <leader>/    :action FindInPath<CR>
 vnoremap <leader>/    :action FindInPath<CR>
+
+" Copy text to clipboard
+let g:WhichKeyDesc_Leader_ClipboardCopy = "<leader>y    copy-selection-to-clipboard"
+nnoremap <leader>y    "+y
+vnoremap <leader>y    "+y
+
+" Paste from Clipboard
+let g:WhichKeyDesc_Leader_ClipboardPaste = "<leader>P    paste-from-clipboard"
+nnoremap <leader>P    "+p
+vnoremap <leader>P    "+p
