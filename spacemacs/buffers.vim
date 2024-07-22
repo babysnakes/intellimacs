@@ -8,6 +8,11 @@ let g:WhichKeyDesc_Buffers_KillBuffer = "<leader>bd    kill-buffer"
 nnoremap <leader>bd    :action CloseContent<CR>
 vnoremap <leader>bd    <Esc>:action CloseContent<CR>
 
+" Close read-only tabs
+let g:WhichKeyDesc_Buffers_KillReadOnly = "<leader>bR    kill-read-only"
+nnoremap <leader>bR    :action CloseAllReadonly<CR>
+vnoremap <leader>bR    <Esc>:action CloseAllReadonly<CR>
+
 " Show event log
 let g:WhichKeyDesc_Buffers_MessagesBuffer = "<leader>bm    messages-buffer"
 nnoremap <leader>bm    :action ActivateEventLogToolWindow<CR>
