@@ -18,6 +18,11 @@ let g:WhichKeyDesc_Buffers_PreviousTab = "<leader>bj    previous-tab"
 nnoremap <leader>bj    :action PreviousTab<CR>
 vnoremap <leader>bj    <Esc>:action PreviousTab<CR>
 
+" Pin Tab
+let g:WhichKeyDesc_Buffers_Pin = "<leader>bt    pin-buffer"
+nnoremap <leader>bt    :action PinActiveTab<CR>
+vnoremap <leader>bt    <Esc>:action PinActiveTab<CR>
+
 " Copy to Clipboard
 let g:WhichKeyDesc_Buffers_ClipboardCopy = "<leader>bc    copy-selection-to-clipboard"
 nnoremap <leader>bc    "+y

@@ -18,13 +18,8 @@ let g:WhichKeyDesc_Windows_FocusWindowFarRight = "<leader>wL focus-window-far-ri
 nnoremap <leader>wL    10<C-w>l
 vnoremap <leader>wL    <Esc>10<C-w>l
 
-" Close all other windows
-let g:WhichKeyDesc_Windows_CloseAllOtherWindows = "<leader>wm close-all-other-windows"
-nnoremap <leader>wm    :action HideAllWindows<CR>
-vnoremap <leader>wm    :action HideAllWindows<CR>
-
 " Toggle maximize of current editor split
-let g:WhichKeyDesc_Windows_ToggleEditorSplitMaximize = "<leader>wm close-all-other-windows"
+let g:WhichKeyDesc_Windows_ToggleEditorSplitMaximize = "<leader>wM maximize-editor-in-split"
 nnoremap <leader>wM    :action MaximizeEditorInSplit<CR>
 vnoremap <leader>wM    :action MaximizeEditorInSplit<CR>
 
