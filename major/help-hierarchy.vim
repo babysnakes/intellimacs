@@ -23,6 +23,11 @@ let g:WhichKeyDesc_Major_Help_TypeDefinition = "<leader>mht type-definition"
 nnoremap <leader>mht      :action QuickTypeDefinition<CR>
 vnoremap <leader>mht      :action QuickTypeDefinition<CR>
 
+" Show Type (ctrl+shift p)
+let g:WhichKeyDesc_Major_Help_ShowType = "<leader>mht type-definition"
+nnoremap <leader>mhp      :action ExpressionTypeInfo<CR>
+vnoremap <leader>mhp      :action ExpressionTypeInfo<CR>
+
 " Show usages for symbol
 let g:WhichKeyDesc_Major_Help_ShowUsages = "<leader>mhU show-usages"
 nnoremap <leader>mhU      :action ShowUsages<CR>
