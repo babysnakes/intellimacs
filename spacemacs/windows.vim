@@ -82,5 +82,5 @@ vnoremap <leader>ww    <Esc>:action NextSplitter<CR>
 
 " Toggle maximized window
 let g:WhichKeyDesc_Windows_ToggleMaximizeWindow = "<leader>wm toggle-maximize-window"
-nnoremap <leader>wm    :action MaximizeEditorInSplit<CR>
-vnoremap <leader>wm    <Esc>:action MaximizeEditorInSplit<CR>
+nnoremap <leader>wm    :action HideAllWindows<CR>
+vnoremap <leader>wm    <Esc>:action HideAllWindows<CR>
