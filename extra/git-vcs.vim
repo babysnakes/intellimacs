@@ -22,3 +22,14 @@ vnoremap <leader>gp    :action Vcs.Push<cr>
 let g:WhichKeyDesc_GitVcs_Shelf = "<leader>gS shelf"
 nnoremap <leader>gS    :action Vcs.Show.Shelf<CR>
 vnoremap <leader>gS    :action Vcs.Show.Shelf<CR>
+
+" " Navigate to Next and Previous diff
+" let g:WhichKeyDesc_GitVcs_Diff = "<leader>gD +diff-window"
+
+" let g:WhichKeyDesc_GitVcs_Diff_Next = "<leader>gDn next-diff"
+" nnoremap <leader>gDn   :action NextDiff<CR>
+" vnoremap <leader>gDn   :action NextDiff<CR>
+
+" let g:WhichKeyDesc_GitVcs_Diff_Prev = "<leader>gDp previous-diff"
+" nnoremap <leader>gDp   :action PreviousDiff<CR>
+" vnoremap <leader>gDp   :action PreviousDiff<CR>
