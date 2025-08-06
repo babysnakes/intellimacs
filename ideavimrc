@@ -1,0 +1,63 @@
+"" Intellimacs (Spacemacs)
+source ~/.intellimacs/spacemacs.vim
+
+" (Optional) Enable other Intellimacs modules
+source ~/.intellimacs/extra.vim
+source ~/.intellimacs/major.vim
+source ~/.intellimacs/hybrid.vim
+
+" " (Optional) Enable which-key plugin
+source ~/.intellimacs/which-key.vim
+
+"" Disable audio bell
+set visualbell
+
+" " Relative numbering by default
+set relativenumber
+set number
+
+" Ctrl-v in EditMode -> paste, in normal mode -> visual block
+" Use different settings for mac and win/linux
+if has('win32') || has('win64')
+    " Windows-specific mappings
+    inoremap <C-v> <C-r>+
+    nnoremap <C-v> <C-v>
+elseif has('unix')
+    if has('mac') || has('macunix')
+        " macOS-specific mappings
+        inoremap <C-v> <C-v>
+        nnoremap <C-v> <C-v>
+    else
+        " Linux-specific mappings
+        inoremap <C-v> <C-r>+
+        nnoremap <C-v> <C-v>
+    endif
+endif
+
+" " (Optional) My own vim commands
+" nnoremap Y y$
+
+" " (Optional) Comma for major mode
+nmap , <leader>m
+vmap , <leader>m
+
+" " (Optional) Add/edit actions
+nnoremap <leader>gl    :action Vcs.Show.Log<CR>
+vnoremap <leader>gl    :action Vcs.Show.Log<CR>))
+
+"" Plugins  --------------------------------
+set NERDTree
+"" All plugins below are either enabled or emulated by intellimacs
+" set surround
+" set multiple-cursors
+" set commentary
+" set argtextobj
+" set easymotion
+" set textobj-entire
+" set ReplaceWithRegister
+
+" " It seems that the default [m and ]m does not work on all languages (e.g. F#)
+nnoremap [m :action MethodUp<CR>
+vnoremap [m :action MethodUp<CR>
+nnoremap ]m :action MethodDown<CR>
+vnoremap ]m :action MethodDown<CR>
